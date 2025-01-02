@@ -29,7 +29,7 @@ const string REFRESH_TOKEN = "5b1ce2fe-0634-4055-ab9c-3bffe7efa00c";
        clientId: CLIENT_ID,
        clientSecret: CLIENT_SECRET,
        refreshToken: REFRESH_TOKEN,
-       credentialBearer: oauth2:POST_BODY_BEARER,  
+       credentialBearer: oauth2:POST_BODY_BEARER 
    };
 
 
@@ -37,7 +37,7 @@ const string REFRESH_TOKEN = "5b1ce2fe-0634-4055-ab9c-3bffe7efa00c";
 // Global Client instance
 ConnectionConfig config = {httpVersion: http:HTTP_2_0, timeout: 60,auth: auth};
 
-final Client hpClient = check new Client(config);
+final Client hpClient = check new Client(config, "http://127.0.0.1:3000");
 
 
 
